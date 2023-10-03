@@ -13,7 +13,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 {
 	const binary_tree_t *first_ac, *second_ac;
 
-	for (first_ac = first; first_ac; first_anc = first_ac->parent)
+	for (first_ac = first; first_ac; first_ac = first_ac->parent)
 		for (second_ac = second; second_ac; second_ac = second_ac->parent)
 			if (first_ac == second_ac)
 				return ((binary_tree_t *)first_ac);
