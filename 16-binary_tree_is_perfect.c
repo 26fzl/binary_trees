@@ -24,7 +24,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	nde = binary_tree_size(tree);
 
 	pw = (size_t)_pow_recursion(2, hght + 1);
-	return (pw - 1 == nds);
+	return (pw - 1 == nde);
 }
 
 /**
